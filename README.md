@@ -4,9 +4,9 @@ This repository holds project templates. Each template lives on its own branch â
 
 ## Templates
 
-| Template          | Branch            |
-| ----------------- | ----------------- |
-| Rust + TypeScript | `rust-typescript` |
+| Template          | Branch                                                                            |
+| ----------------- | --------------------------------------------------------------------------------- |
+| Rust + TypeScript | [`rust-typescript`](https://github.com/six5536/project-templates/tree/rust-typescript) |
 
 ## Usage
 
