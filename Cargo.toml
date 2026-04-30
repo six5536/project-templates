@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/app/*",
+  "crates/lib/*",
+]
+default-members = []
+
+[workspace.package]
+version = "0.1.0"
+authors = ["six5536 <10079653+six5536@users.noreply.github.com>"]
+edition = "2024"
+rust-version = "1.95.0"
+readme = "README.md"
+license = "(c) 2026 Richard Sewell. All rights reserved."
+
+[workspace.dependencies]
+# External dependencies (alphabetical)
+
+# Dev dependencies
+
+# Internal crates
+
+# Optimize release builds for size
+[profile.release]
+opt-level = "z"  # optimize aggressively for size
+strip = true  # strip debug info and symbols
+lto = true  # full link-time optimization across all crates
+panic = "abort"  # no unwinding overhead
+codegen-units = 1  # single codegen unit → better optimization
+
+[profile.test]
+opt-level = 0
+debug = 0
+split-debuginfo = "unpacked"  # For macOS
